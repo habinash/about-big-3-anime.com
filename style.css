@@ -1,0 +1,85 @@
+.{
+margin: 0px;
+padding: 0px;
+font-family: sans-serif;
+}
+
+.heading{
+    color: black;
+    font-size: 20Px;
+    font-weight: bold;
+    padding: 24px;
+   text-align: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.container{
+    display: flex;
+    background-image: url(https://res.cloudinary.com/dykxaktkc/image/upload/v1663653861/images_2_odw7js.jpg);
+    height: auto;
+    width: auto;
+}
+.card{
+    height: 590px;
+    margin: 20px;
+    box-shadow: 10px 10px 40px black;
+    overflow: hidden;
+    background-color: black;
+}
+
+img{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.intro{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 30px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+}
+
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+.p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 220px;
+    bottom: 220px;
+    background: black;
+}
+
+.card:hover .p{
+    opacity: 1;
+    visibility: hidden;
+}
+
+.card:hover img{
+    transform: scale(1.1) rotate(-2deg);
+}
